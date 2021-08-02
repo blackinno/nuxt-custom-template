@@ -39,6 +39,14 @@ export default {
     manifest: { lang: 'en' },
   },
 
+  storybook: {
+    stories: ['~/stories/**/*.stories.js'],
+    port: 4000,
+    webpackFinal(config) {
+      return config
+    },
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
